@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+}
+
+body{
+    min-height: 150vh;
+    background: rgb(219,219,219);
+    background: linear-gradient(90deg, rgb(219, 219, 219) 0%, rgba(219,0,141,1) 100%);
+    font-family: 'Lobster Two';
+    padding: 1em;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+p{
+    background: aqua;
+    border: 3px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+
+span{
+    background: red;
+    border: 1px solid black;
+}
+
+h1{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
+    background: #fff;
+    padding: 10px;
+}
+
+dt {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 1em 0;
+  }
