@@ -1,0 +1,44 @@
+// Colors
+
+$clr-primary: #0D0D0D;
+$clr-secondary: #BF0B3B;
+$clr-accent: #D9D9D9;
+$clr-bg: linear-gradient(90deg, rgba(165,185,228,1) 0%, rgba(219,0,155,1) 92%);
+$clr-text-light: #ffffff;
+$clr-text-dark: #000000;
+
+// ================= Typography =================
+
+// Font Families
+
+$ff-primary: 'Nunito', 'Helvetica', sans-serif;
+$ff-secondary: 'Arial', 'Garamond', serif;
+
+// Font Weights
+
+$font-weight: (
+    "thin": 300,
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+// Font Sizes
+
+$font-size: (
+    "samll": .8rem,
+    "normal": 1rem,
+    "big": 1.5rem,
+    "large": 2rem,
+    "super-large": 3rem
+);
+
+// ==================== Layout ===================
+
+$spacing: (
+    "small": .2em,
+    "normal": .5em,
+    "big": 1em,
+    "large": 1.5em,
+    "extra-large": 3em
+);

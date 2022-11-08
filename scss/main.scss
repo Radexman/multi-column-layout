@@ -1,0 +1,89 @@
+@import './resets', './variables';
+
+@function fontSize($font-size-name){
+    @return map-get($font-size, $font-size-name)
+};
+
+@function weight($font-weight-name){
+    @return map-get($font-weight, $font-weight-name)
+};
+
+@function spacing($spacing-name){
+    @return map-get($spacing, $spacing-name)
+};
+
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+};
+
+@mixin multiColumn{
+    column-width: 400px;
+    column-gap: spacing(large);
+    column-rule: 4px solid $clr-primary;
+};
+
+body {
+    @include flexCenter(column);
+    min-height: 100vh;
+    background: $clr-bg;
+    font-family: $ff-primary;
+    font-weight: weight(medium);
+    padding: spacing(large);
+}
+
+h1 {
+    color: $clr-secondary;
+    font-size: fontSize(super-large);
+    font-family: $ff-secondary;
+    padding-bottom: spacing(normal);
+}
+
+h2{
+    background-color: $clr-primary;
+    color: $clr-text-light;
+    padding: spacing(normal);
+    margin-block: spacing(big);
+    column-span: all;
+    border: 2px solid $clr-secondary;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+}
+
+h3{
+    color: $clr-text-light;
+    font-size: fontSize(big);
+    background-color: $clr-secondary;
+    display: flow-root;
+    text-align: center;
+    border: 1px solid $clr-primary;
+    border-radius: 5px;
+}
+
+.text{
+    display: flow-root;
+}
+
+.img-box{
+    float: left;
+    max-width: 100%;
+    height: 204px;
+    margin: spacing(normal);
+    border: 2px solid $clr-secondary;
+}
+
+main {
+    @include multiColumn;
+    width: 100%;
+
+    p {
+        font-size: fontSize(large);
+        color: $clr-primary;
+        padding-block: spacing(normal);
+        font-weight: weight(bold);
+        text-align: justify;
+    }
+}
